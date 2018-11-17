@@ -60,7 +60,7 @@ footer > div{padding:10px; text-align:center; font-size:12px;}
 
 
 
-.audience{min-height:calc(100vh - 60px); background:#212121; color:#EEE;}
+.audience{background:#212121; color:#EEE;}
 .ad-content{width:100%; max-width:1280px; box-sizing:border-box; padding:40px 20px;}
 .ad-number > *{display:block; text-align:center;}
 .ad-number h2{font-family: 'Oswald', sans-serif; font-size:96px; line-height:96px; text-transform:uppercase;}
@@ -101,3 +101,11 @@ footer > div{padding:10px; text-align:center; font-size:12px;}
   .ad-device-box:hover .adb-name > i{right:0; opacity:1;}
   .adb-more{margin-top:40px;}
 }
+
+
+
+.partner{min-height:calc(100vh - 96px);}
+.partner-list > ul{display:-webkit-box; display:-ms-flexbox; display:flex; -ms-flex-wrap:wrap; flex-wrap:wrap; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center;}
+.partner-list > ul > li{float:left; position:relative; margin:20px; max-width:180px;}
+.partner-list .flex_ori{background-color:transparent;}
+.partner-list img{max-height:80px; display:flex;}

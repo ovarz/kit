@@ -85,10 +85,12 @@ var main_menu = function(){
 /* scroll reveal show */
 var scroll_reveal_show = function(){
   window.sr = ScrollReveal({reset:false,mobile:true,viewFactor:0.4});
+  sr.reveal('.container-title',50);
   sr.reveal('.about-info > span > .name',50);
   sr.reveal('.about-info > span > .desc > p',50);
   sr.reveal('.ad-number > *',50);
   sr.reveal('.ad-device > ul > li',50);
+  sr.reveal('.partner-list > ul > li',50);
 };
 /* end scroll reveal show */
 
@@ -102,10 +104,13 @@ var scroll_script = function(){
   
   var page_menu = function(){	
 	$(window).scroll(function(){
+	  var browser_height = parseInt($(window).height());
 	  var scroll_position = $(window).scrollTop() + 60;
 	  
 	  if(scroll_position > 61){$('header, menu').addClass("sticky");}
 	  else{$('header, menu').removeClass("sticky");}
+	  if(scroll_position > browser_height/2){$('.logo').addClass("show");}
+	  else{$('.logo').removeClass("show");}
 		
 	  /* current pagemenu */
 	  var home_top = $('#home').position().top;
@@ -114,9 +119,9 @@ var scroll_script = function(){
 	  var about_bottom = about_top + parseInt($('#about').outerHeight());
 	  var audience_top = $('#audience').position().top;
 	  var audience_bottom = audience_top + parseInt($('#audience').outerHeight());
+	  var partner_top = $('#partner').position().top;
+	  var partner_bottom = partner_top + parseInt($('#partner').outerHeight());
 	  /*
-	  var skill_top = $('#skill').position().top;
-	  var skill_bottom = skill_top + parseInt($('#skill').outerHeight());
 	  var experience_top = $('#experience').position().top;
 	  var experience_bottom = experience_top + parseInt($('#experience').outerHeight());
 	  var portofolio_top = $('#portofolio').position().top;
@@ -138,14 +143,13 @@ var scroll_script = function(){
 		$('.menu-link').removeClass("curr");
 		$('.menu-audience').addClass("curr");
 	  }
+	  else if(scroll_position >= partner_top && scroll_position < partner_bottom){
+		$('.menu-link').removeClass("curr");
+		$('.menu-partner').addClass("curr");
+	  }
 		
 	  
 	  /*
-	  else if(scroll_position >= skill_top && scroll_position < skill_bottom){
-		$('.menu-link').removeClass("curr");
-		$('.menu-skill').addClass("curr");
-	  }
-		
 	  else if(scroll_position >= experience_top && scroll_position < experience_bottom){
 		$('.menu-link').removeClass("curr");
 		$('.menu-experience').addClass("curr");
