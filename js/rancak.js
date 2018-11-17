@@ -87,6 +87,8 @@ var scroll_reveal_show = function(){
   window.sr = ScrollReveal({reset:false,mobile:true,viewFactor:0.4});
   sr.reveal('.about-info > span > .name',50);
   sr.reveal('.about-info > span > .desc > p',50);
+  sr.reveal('.ad-number > *',50);
+  sr.reveal('.ad-device > ul > li',50);
 };
 /* end scroll reveal show */
 
@@ -110,9 +112,9 @@ var scroll_script = function(){
 	  var home_bottom = home_top + parseInt($('#home').outerHeight());
 	  var about_top = $('#about').position().top;
 	  var about_bottom = about_top + parseInt($('#about').outerHeight());
+	  var audience_top = $('#audience').position().top;
+	  var audience_bottom = audience_top + parseInt($('#audience').outerHeight());
 	  /*
-	  var personality_top = $('#personality').position().top;
-	  var personality_bottom = personality_top + parseInt($('#personality').outerHeight());
 	  var skill_top = $('#skill').position().top;
 	  var skill_bottom = skill_top + parseInt($('#skill').outerHeight());
 	  var experience_top = $('#experience').position().top;
@@ -132,13 +134,13 @@ var scroll_script = function(){
 		$('.menu-link').removeClass("curr");
 		$('.menu-about').addClass("curr");
 	  }
-	  
-	  /*
-	  else if(scroll_position >= personality_top && scroll_position < personality_bottom){
+	  else if(scroll_position >= audience_top && scroll_position < audience_bottom){
 		$('.menu-link').removeClass("curr");
-		$('.menu-personality').addClass("curr");
+		$('.menu-audience').addClass("curr");
 	  }
 		
+	  
+	  /*
 	  else if(scroll_position >= skill_top && scroll_position < skill_bottom){
 		$('.menu-link').removeClass("curr");
 		$('.menu-skill').addClass("curr");
@@ -178,7 +180,7 @@ $(document).ready(function(){
   "use strict";
   flex_thumb();
   back_to_top();
-  refresh_up();
+  //refresh_up();
   main_menu();
   scroll_reveal_show();
   scroll_script();
@@ -187,10 +189,10 @@ $(document).ready(function(){
 
 
 $(window).load(function() {
-  refresh_up();
+  //refresh_up();
   $(".se-pre-con").fadeOut("slow");
   $(".cd-map > span").load("contact-map.php");
-  $('#viva-video-bg').html("<video autoplay=\"\" loop muted><source src=\"img/viva-trailer.mp4\" type=\"video/mp4\"><source src=\"img/viva-inside.ogg\" type=\"video/ogg\"></video>");
+  $('#viva-video-bg').html("<video autoplay=\"\" loop muted><source src=\"http://ov4rz.com/sample-trailer.mp4\" type=\"video/mp4\"><source src=\"img/viva-inside.ogg\" type=\"video/ogg\"></video>");
 });
 
 

@@ -11,6 +11,7 @@ $(document).ready(function() {
 <div id="rancak-framework">
   <?php require ('page/cover.php'); ?>
   <?php require ('page/about.php'); ?>
+  <?php require ('page/audience.php'); ?>
 </div>
 
 <?php require ('inc/footer.php'); ?>

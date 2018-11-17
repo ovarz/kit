@@ -70,6 +70,12 @@ ol::before, ol::after{content:''; display:block; overflow:hidden; visibility:hid
 
 
 
+.section-bg, .section-bg > *{position:absolute; z-index:1; top:0; left:0; width:100%; height:100%;}
+.section-bg > *{background-color:transparent; background-attachment:fixed; opacity:0.1;}
+.section-content_center{position:relative; z-index:2; padding:40px;}
+
+
+
 header{position:fixed; z-index:998; top:0; left:0; width:100%;
 transition:all 0.4s; -moz-transition:all 0.4s; -webkit-transition:all 0.4s; -o-transition:all 0.4s;}
 header.sticky{background-color:rgba(0,0,0,0.75); -moz-box-shadow:0 0 10px #000; -webkit-box-shadow:0 0 10px #000; box-shadow:0 0 10px #000;}
