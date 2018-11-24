@@ -196,7 +196,7 @@ $(window).load(function() {
   //refresh_up();
   $(".se-pre-con").fadeOut("slow");
   $(".cd-map > span").load("contact-map.php");
-  $('#viva-video-bg').html("<video autoplay=\"\" loop muted><source src=\"http://ov4rz.com/sample-trailer.mp4\" type=\"video/mp4\"><source src=\"img/viva-inside.ogg\" type=\"video/ogg\"></video>");
+  $('#viva-video-bg').html("<video autoplay=\"\" loop muted><source src=\"http://preview.viva.co.id/viva18/kit/img/sample-trailer.mp4\" type=\"video/mp4\"><source src=\"img/viva-inside.ogg\" type=\"video/ogg\"></video>");
 });
 
 
