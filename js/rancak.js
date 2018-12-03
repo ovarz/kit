@@ -89,7 +89,6 @@ var scroll_reveal_show = function(){
   sr.reveal('.about-info > span > .name',50);
   sr.reveal('.about-info > span > .desc > p',50);
   sr.reveal('.ad-number > *',50);
-  sr.reveal('.ad-device > ul > li',50);
   sr.reveal('.partner-list > ul > li',50);
 };
 /* end scroll reveal show */
@@ -180,6 +179,17 @@ var scroll_script = function(){
 
 
 
+/* audience */
+var popup_full = function(){
+  "use strict";
+  $(".popup-full").click(function(){
+    $(this).parent().find('.popup-full-content').fadeIn("fast");
+  });
+};
+/* end audience */
+
+
+
 $(document).ready(function(){
   "use strict";
   flex_thumb();
@@ -188,6 +198,7 @@ $(document).ready(function(){
   main_menu();
   scroll_reveal_show();
   scroll_script();
+  popup_full();
 });
 
 

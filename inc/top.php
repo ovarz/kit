@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html itemscope="itemscope" itemtype="http://schema.org/WebPage">
 <head>
-<title>Aufar Mahardi</title>
-<meta name="copyright" content="Aufar Mahardi">
-<meta name="description" content="Aufar Mahardi Curriculum Vitae" />
+<title>VMB Media Kit</title>
+<meta name="copyright" content="VMB">
+<meta name="description" content="VMB Media Kit" />
 <meta content="id" name="language" />
 <meta content="id" name="geo.country" />
 <meta content="Indonesia" name="geo.placename" />
