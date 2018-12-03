@@ -39,6 +39,10 @@ ol::before, ol::after{content:''; display:block; overflow:hidden; visibility:hid
 .bgnowhite .container-title h2{color:#FFF;}
 .bgnowhite .container-title .line{background:#9E9E9E;}
 
+.popup-full-content .container-title h2{color:#FFF;}
+.popup-full-content .container-title .line{background:#424242;}
+.popup-full-content .container-title .line > span{background-color:#E53935;}
+
 .content_center{display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-align-content:center; align-content:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center;}
 .content_center > *{margin:auto;}
 

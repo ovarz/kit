@@ -85,7 +85,6 @@ var main_menu = function(){
 /* scroll reveal show */
 var scroll_reveal_show = function(){
   window.sr = ScrollReveal({reset:false,mobile:true,viewFactor:0.4});
-  sr.reveal('.container-title',50);
   sr.reveal('.about-info > span > .name',50);
   sr.reveal('.about-info > span > .desc > p',50);
   sr.reveal('.ad-number > *',50);
@@ -183,8 +182,15 @@ var scroll_script = function(){
 /* audience */
 var popup_full = function(){
   "use strict";
-  $(".popup-full").click(function(){
-    $(this).parent().find('.popup-full-content').fadeIn("fast");
+  $(".popup-full > a").click(function(){
+    var myClass = $(this).attr("class");
+    $("#" + myClass).fadeIn(100);
+	$("html").css("overflow-y","hidden");
+  });
+  
+  $(".pfc-close").click(function(){
+    $(this).parent().fadeOut(100);
+	$("html").css("overflow-y","auto");
   });
 };
 /* end audience */

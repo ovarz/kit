@@ -24,9 +24,14 @@ footer > div{padding:10px; text-align:center; font-size:12px;}
 
 
 
-.popup-full-content{position:fixed; top:0; left:0; width:100%; height:100%; z-index:999; background-color:rgba(0,0,0,0.6); overflow-y:auto; display:none;}
+.popup-full-content{position:fixed; top:0; left:0; width:100%; height:100vh; z-index:999; background-color:rgba(0,0,0,0.9); overflow-y:auto; display:none;}
+.pfc-box{min-height:100vh; padding:20px; box-sizing:border-box;}
+.pfc-box > span{width:100%; max-width:1280px;}
+.pfc-close{z-index:9; position:absolute; right:0; top:0; padding:20px; font-size:24px; font-weight:bold; color:#FFF;}
 
-
+@media screen and (min-width:1024px){
+  .pfc-close:hover{color:#E53935;}
+}
 
 .about{padding:0 !important;}
 .about > ul{display:-webkit-box; display:-ms-flexbox; display:flex; -ms-flex-wrap:wrap; flex-wrap:wrap; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center;}
@@ -108,6 +113,33 @@ footer > div{padding:10px; text-align:center; font-size:12px;}
   .adb-name > i{display:block; position:absolute; top:5px; right:20px; font-size:30px; opacity:0;}
   .ad-device-box:hover .adb-name > i{right:0; opacity:1;}
   .adb-more{margin-top:40px;}
+}
+
+
+
+.oa-list > ul{display:-webkit-box; display:-ms-flexbox; display:flex; -ms-flex-wrap:wrap; flex-wrap:wrap; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center;}
+.oa-list > ul > li{float:left; position:relative; margin:10px;}
+.oa-box{position:relative;}
+.oa-box:after{content:''; display:block; padding-top:75%;}
+.oa-box > *{position:absolute; left:0; width:100%; box-sizing:border-box;}
+.oa-bg{z-index:1; height:100%;}
+.oa-overlay{z-index:2; height:100%; background-color:rgba(0,0,0,0.5);}
+.oa-title, .oa-info{z-index:3; padding:15px; color:#FFF;}
+.oa-title{top:0; font-weight:bold;}
+.oa-info{bottom:0;}
+.oa-percent{font-weight:bold; font-size:36px; line-height:40px;}
+.oa-desc{font-size:12px;}
+
+@media screen and (min-width:0px) and (max-width:567px){
+  .oa-list > ul > li{width:calc(100% - 20px); flex-basis:calc(100% - 20px);}
+}
+
+@media screen and (min-width:568px) and (max-width:767px){
+  .oa-list > ul > li{width:calc(50% - 20px); flex-basis:calc(50% - 20px);}
+}
+
+@media screen and (min-width:768px){
+  .oa-list > ul > li{width:calc(33.33% - 20px); flex-basis:calc(33.33% - 20px);}
 }
 
 
