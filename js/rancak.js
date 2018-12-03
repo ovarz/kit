@@ -89,6 +89,7 @@ var scroll_reveal_show = function(){
   sr.reveal('.about-info > span > .name',50);
   sr.reveal('.about-info > span > .desc > p',50);
   sr.reveal('.ad-number > *',50);
+  sr.reveal('.ad-device > ul > li',50);
   sr.reveal('.partner-list > ul > li',50);
 };
 /* end scroll reveal show */
