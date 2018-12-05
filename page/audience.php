@@ -15,9 +15,9 @@
     <div class="ad-device">
   	  <ul>
   	    <li class="popup-full">
-  	  	  <a href="javascript:void(0)" class="popup-audience-antv">
-  	  		<div class="adb-name">ANTV <i class="fas fa-chevron-right smooth"></i></div>
-  	  		<div class="adb-stat">99.9M Viewer</div>
+  	  	  <a href="javascript:void(0)" class="popup-audience-desktop">
+  	  		<div class="adb-name">Desktop <i class="fas fa-chevron-right smooth"></i></div>
+  	  		<div class="adb-stat">99.9M Pageview</div>
   	  		<div class="adb-source">Per month in comscore</div>
   	  		<div class="adb-more content_center">
   	  		  <span>More</span>
@@ -29,23 +29,23 @@
   	    
   	    
   	    <li class="popup-full">
-  	  	  <a href="javascript:void(0)" class="popup-audience-tvone">
-  	  		<div class="adb-name">tvOne <i class="fas fa-chevron-right smooth"></i></div>
-  	  		<div class="adb-stat">99.9M Subscription</div>
-  	  		<div class="adb-source">Per month in comscore</div>
-  	  		<div class="adb-more content_center">
-  	  		  <span>More</span>
-  	  		  <i class="fas fa-caret-right"></i>
-  	  		</div>
-  	  	  </a>
-  	    </li>
-  	    
-  	    
-  	    
-  	    <li class="popup-full">
-  	  	  <a href="javascript:void(0)" class="popup-audience-viva">
-  	  		<div class="adb-name">VIVA.co.id <i class="fas fa-chevron-right smooth"></i></div>
+  	  	  <a href="javascript:void(0)" class="popup-audience-mobile">
+  	  		<div class="adb-name">Mobile <i class="fas fa-chevron-right smooth"></i></div>
   	  		<div class="adb-stat">99.9M User</div>
+  	  		<div class="adb-source">Per month in comscore</div>
+  	  		<div class="adb-more content_center">
+  	  		  <span>More</span>
+  	  		  <i class="fas fa-caret-right"></i>
+  	  		</div>
+  	  	  </a>
+  	    </li>
+  	    
+  	    
+  	    
+  	    <li class="popup-full">
+  	  	  <a href="javascript:void(0)" class="popup-audience-app">
+  	  		<div class="adb-name">Apps <i class="fas fa-chevron-right smooth"></i></div>
+  	  		<div class="adb-stat">99.9M Subscription</div>
   	  		<div class="adb-source">Per month in comscore</div>
   	  		<div class="adb-more content_center">
   	  		  <span>More</span>
@@ -96,7 +96,7 @@
 
  	  	  
   	  	  
-<div class="popup-full-content pfc-white" id="popup-audience-viva">
+<div class="popup-full-content pfc-white" id="popup-audience-mobile">
   <a class="pfc-close content_center" href="javascript:void(0)">X</a>
   <div class="pfc-box content_center">
     <span>

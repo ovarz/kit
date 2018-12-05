@@ -1,8 +1,8 @@
 <section id="about" class="about container">
   <ul>
   	<li class="about-photo">
- 	  <div class="about-photo-mobile flex_lazy"><img data-original="img/about-joking.jpg" /></div>
-  	  <div class="about-photo-desktop flex_lazy"><img data-original="img/about-joking.jpg" /></div>
+ 	  <div class="about-photo-mobile flex_lazy"><img data-original="img/about-mobile.jpg" /></div>
+  	  <div class="about-photo-desktop flex_lazy"><img data-original="img/about-desktop.jpg" /></div>
   	</li>
   	<li class="about-info content_center">
   	  <span>
