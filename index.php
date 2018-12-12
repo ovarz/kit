@@ -12,6 +12,7 @@ $(document).ready(function() {
   <?php require ('page/cover.php'); ?>
   <?php require ('page/about.php'); ?>
   <?php require ('page/audience.php'); ?>
+  <?php require ('page/iklan.php'); ?>
   <?php require ('page/partner.php'); ?>
 </div>
 

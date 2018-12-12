@@ -94,6 +94,7 @@ var scroll_reveal_show = function(){
   sr.reveal('.ad-number > *',50);
   sr.reveal('.ad-device > ul > li',50);
   sr.reveal('.partner-list > ul > li',50);
+  sr.reveal('.iklan-list > ul > li',50);
 };
 /* end scroll reveal show */
 
@@ -124,9 +125,9 @@ var scroll_script = function(){
 	  var audience_bottom = audience_top + parseInt($('#audience').outerHeight());
 	  var partner_top = $('#partner').position().top;
 	  var partner_bottom = partner_top + parseInt($('#partner').outerHeight());
+	  var iklan_top = $('#iklan').position().top;
+	  var iklan_bottom = iklan_top + parseInt($('#iklan').outerHeight());
 	  /*
-	  var experience_top = $('#experience').position().top;
-	  var experience_bottom = experience_top + parseInt($('#experience').outerHeight());
 	  var portofolio_top = $('#portofolio').position().top;
 	  var portofolio_bottom = portofolio_top + parseInt($('#portofolio').outerHeight());
 	  var contact_top = $('#contact').position().top;
@@ -151,13 +152,12 @@ var scroll_script = function(){
 		$('.menu-partner').addClass("curr");
 	  }
 		
-	  
-	  /*
-	  else if(scroll_position >= experience_top && scroll_position < experience_bottom){
+	  else if(scroll_position >= iklan_top && scroll_position < iklan_bottom){
 		$('.menu-link').removeClass("curr");
-		$('.menu-experience').addClass("curr");
+		$('.menu-iklan').addClass("curr");
 	  }
 		
+	  /*
 	  else if(scroll_position >= portofolio_top && scroll_position < portofolio_bottom){
 		$('.menu-link').removeClass("curr");
 		$('.menu-portofolio').addClass("curr");
@@ -220,7 +220,7 @@ $(document).ready(function(){
   "use strict";
   flex_thumb();
   back_to_top();
-  //refresh_up();
+  refresh_up();
   main_menu();
   scroll_reveal_show();
   scroll_script();
@@ -231,7 +231,7 @@ $(document).ready(function(){
 
 
 $(window).load(function() {
-  //refresh_up();
+  refresh_up();
   $(".se-pre-con").fadeOut("slow");
   $(".cd-map > span").load("contact-map.php");
   $('#viva-video-bg').html("<video autoplay=\"\" loop muted><source src=\"http://preview.viva.co.id/viva18/kit/img/sample-trailer.mp4\" type=\"video/mp4\"><source src=\"img/viva-inside.ogg\" type=\"video/ogg\"></video>");
