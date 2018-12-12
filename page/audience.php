@@ -15,7 +15,7 @@
     <div class="ad-device">
   	  <ul>
   	    <li class="popup-full">
-  	  	  <a href="javascript:void(0)" class="popup-audience-desktop">
+  	  	  <a href="javascript:void(0)" class="popup-audience-mobile">
   	  		<div class="adb-name">Desktop <i class="fas fa-chevron-right smooth"></i></div>
   	  		<div class="adb-stat">99.9M Pageview</div>
   	  		<div class="adb-source">Per month in comscore</div>
@@ -43,7 +43,7 @@
   	    
   	    
   	    <li class="popup-full">
-  	  	  <a href="javascript:void(0)" class="popup-audience-app">
+  	  	  <a href="javascript:void(0)" class="popup-audience-mobile">
   	  		<div class="adb-name">Apps <i class="fas fa-chevron-right smooth"></i></div>
   	  		<div class="adb-stat">99.9M Subscription</div>
   	  		<div class="adb-source">Per month in comscore</div>
