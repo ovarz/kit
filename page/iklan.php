@@ -13,8 +13,8 @@
         <div class="iklan-box">
           <div class="ikb-name">Leaderboard</div>
           <div class="ikb-price">
-            <span>Start from</span>
-            <b>IDR 10.000.000,-</b>
+            <span>Estimated Impression</span>
+            <b>100.000 / Month</b>
           </div>
           <div class="ikb-info">
           	<ul>
@@ -33,13 +33,6 @@
           	  <li>
           	  	<div class="ikb-label">Max Size</div>
           	  	<div class="ikb-value">100mb</div>
-          	  </li>
-          	  <li>
-          	  	<div class="ikb-label">Impression</div>
-          	  	<div class="ikb-value">
-          	  	  <div>Start from</div>
-          	  	  <b>100.000 / Month</b>
-          	  	</div>
           	  </li>
           	</ul>
           </div>
